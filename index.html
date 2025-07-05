@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js exaesise </title>
+    <!-- favicon -->
+    <link rel="icon" href="img/logo_bg.png" type="image/png">
+    <!-- fontawsam  -->
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Example 001 -->
+         <div class="search-container">
+    <input type="text" id="searchInput2" placeholder="What are you looking for?">
+    <button onclick="performSearch2()">Search</button>
+  </div>
+        <!-- Example 001 -->
+        <h2>Example 001 click the button to change the text</h2>
+        <button class="btn btn-dark" onclick="textChange()" type="button">change text</button>
+        <h3 id="tc"> hi this is tawhidul islam</h3>
+<!-- Example 001 -->
+         <h2>Example 001 click the button to change the text</h2>
+        <button class="btn btn-dark" onclick="showChange()" type="button">change text</button>
+        <h3 id="st"></h3>
+        <br>
+        <!-- Example 001 -->
+            <h2>Example 001 click the button to show the date and time</h2>
+        <button class="btn btn-dark" onclick="showDate()" type="button">show date</button>
+        <h3 id="sd"></h3>
+        <br>
+        <!-- Example 001 -->
+        <h2> Example 001 click the button to on/off the bulp</h2>
+        <button class="btn btn-dark" onclick="bulpOne()" type="button">on</button>
+        <img id="b_img" src="img/pic_bulbon.gif" alt="">
+        <button class="btn btn-dark" onclick="bulpOff()" type="button">off</button>
+        <br>
+        <!-- Example 001 -->
+         <input type="text" id="searchInput" placeholder="Search...">
+         <button  class="btn btn-dark" onclick="performSearch()">Search</button>
+        <br>
+        <!-- Example 001 -->
+ <h2>Example 001: Add Two Numbers</h2>
+        <input type="number" id="num1" placeholder="Enter first number">
+        <input type="number" id="num2" placeholder="Enter second number">
+        <button class="btn btn-dark" onclick="addNumbers()">Add</button>
+        <p id="result1"></p>
+<br>
+<!-- Example 001 -->
+ <h2>Example 002: Greet the User</h2>
+<input type="text" id="username" placeholder="Enter your name">
+<button class="btn btn-dark" onclick="greetUser()">Greet</button>
+<p id="greeting"></p>
+
+<br>
+<!-- Example 001 -->
+<h2>Example 003: Even or Odd</h2>
+<input type="number" id="number" placeholder="Enter a number">
+<button class="btn btn-dark" onclick="checkEvenOdd()">Check</button>
+<p id="output"></p>
+<br>
+<!-- Example 001 -->
+<h2>Example 004: Positive or Negative</h2>
+<input type="number" id="numCheck" placeholder="Enter a number">
+<button  class="btn btn-dark" onclick="checkSign()">Check</button>
+<p id="signResult"></p>
+<br>
+<!-- Example 001 -->
+<h2>Example 005: Print 1 to 10</h2>
+<button  class="btn btn-dark" onclick="printNumbers()">Print</button>
+<p id="numbersList"></p>
+<br>
+<!-- Example 001 -->
+<h2>Example 006: Show Array Elements</h2>
+<button  class="btn btn-dark" onclick="printArray()">Show</button>
+<p id="arrayOutput"></p>
+<br>
+<!-- Example 001 -->
+<h2>Example 007: Find Maximum</h2>
+<button  class="btn btn-dark" onclick="findMax()">Find Max</button>
+<p id="maxOutput"></p>
+<br>
+<!-- Example 001 -->
+<h2>Example 008: Reverse a String</h2>
+<input type="text" id="inputString" placeholder="Enter a string">
+<button  class="btn btn-dark" onclick="reverseString()">Reverse</button>
+<p id="reversed"></p>
+
+<br>
+<!-- Example 001 -->
+<h2>Example 009: Palindrome Check</h2>
+<input type="text" id="palindromeInput" placeholder="Enter a word">
+<button  class="btn btn-dark" onclick="checkPalindrome()">Check</button>
+<p id="palindromeResult"></p>
+<br>
+<!-- Example 001 -->
+
+<h2>Example 010: Multiply Two Numbers</h2>
+<input type="number" id="mul1" placeholder="First number">
+<input type="number" id="mul2" placeholder="Second number">
+<button  class="btn btn-dark" onclick="multiply()">Multiply</button>
+<p id="mulResult"></p>
+<br>
+<!-- Example 001 -->
+
+<h2>Example 011: Current Date and Time</h2>
+<button  class="btn btn-dark" onclick="showTime()">Show Time</button>
+<p id="dateTime"></p>
+<br>
+<!-- Example 001 -->
+<h2>Example 012: Show Odd Numbers</h2>
+<button  class="btn btn-dark" onclick="showOdds()">Show Odds</button>
+<p id="oddOutput"></p>
+<br>
+<!-- Example 001 -->
+<h2>Example 013: Factorial</h2>
+<input type="number" id="factInput" placeholder="Enter number">
+<button  class="btn btn-dark" onclick="factorial()">Factorial</button>
+<p id="factorialResult"></p>
+
+<br>
+<!-- Example 001 -->
+<h2>Example 014: Age Calculator</h2>
+<input type="number" id="birthYear" placeholder="Enter birth year">
+<button  class="btn btn-dark" onclick="calculateAge()">Calculate Age</button>
+<p id="ageResult"></p>
+<br>
+<!-- Example 001 -->
+<h2>Example 015: Multiplication Table</h2>
+<input type="number" id="tableNum" placeholder="Enter a number">
+<button  class="btn btn-dark" onclick="generateTable()">Generate</button>
+<pre id="tableResult"></pre>
+<br>
+<!-- Example 001 -->
+<h2>Example 016: Sort Array Ascending</h2>
+<button onclick="sortArray()">Sort</button>
+<p id="sortedArray"></p>
+<br>
+<!-- Example 001 -->
+<h2>Example 017: Count Vowels</h2>
+<input type="text" id="sentence" placeholder="Enter sentence">
+<button onclick="countVowels()">Count</button>
+<p id="vowelCount"></p>
+<br>
+<!-- Example 001 -->
+<h2>Example 018: Prime Checker</h2>
+<input type="number" id="primeInput" placeholder="Enter a number">
+<button onclick="checkPrime()">Check</button>
+<p id="primeResult"></p>
+<br>
+<!-- Example 001 -->
+<h2>Example 019: Celsius to Fahrenheit</h2>
+<input type="number" id="celsius" placeholder="Celsius">
+<button onclick="convertTemp()">Convert</button>
+<p id="fahrenheitOutput"></p>
+<br>
+<!-- Example 001 -->
+<h2>Example 020: Word Counter</h2>
+<input type="text" id="wordInput" placeholder="Enter sentence">
+<button onclick="countWords()">Count Words</button>
+<p id="wordResult"></p>
+
+
+
+
+
+
+
+
+<br> 
+<!-- Example 001 -->
+  <h2>Example 026: Convert to Uppercase</h2>
+  <input type="text" id="upperInput" placeholder="Enter text">
+  <button onclick="convertToUppercase()">Convert</button>
+  <p id="upperResult"></p>
+
+  <!-- Example 001 -->
+  <h2>Example 027: String Length</h2>
+  <input type="text" id="lengthInput" placeholder="Enter text">
+  <button onclick="getStringLength()">Get Length</button>
+  <p id="lengthResult"></p>
+<!-- Example 001 -->
+  
+  <h2>Example 028: Find Minimum</h2>
+  <button onclick="findMin()">Find Min</button>
+  <p id="minResult"></p>
+
+  <!-- Example 001 -->
+  <h2>Example 029: F to C</h2>
+  <input type="number" id="fahrenheitInput" placeholder="Fahrenheit">
+  <button onclick="convertToCelsius()">Convert</button>
+  <p id="celsiusOutput"></p>
+
+ <!-- Example 001 -->
+  <h2>Example 030: Capitalize First</h2>
+  <input type="text" id="capitalizeInput" placeholder="Enter text">
+  <button onclick="capitalizeFirst()">Capitalize</button>
+  <p id="capitalizeResult"></p>
+<!-- Example 001 -->
+ 
+  <h2>Example 031: Array Sum</h2>
+  <button onclick="sumArray()">Sum</button>
+  <p id="sumResult"></p>
+<!-- Example 001 -->
+  
+  <h2>Example 032: Count Consonants</h2>
+  <input type="text" id="consonantInput" placeholder="Enter text">
+  <button onclick="countConsonants()">Count</button>
+  <p id="consonantCount"></p>
+<!-- Example 001 -->
+  
+  <h2>Example 033: Reverse Array</h2>
+  <button onclick="reverseArray()">Reverse</button>
+  <p id="reversedArray"></p>
+<!-- Example 001 -->
+  <h2>Example 034: Contains Word?</h2>
+  <input type="text" id="sentenceInput" placeholder="Enter sentence">
+  <input type="text" id="wordInput" placeholder="Enter word">
+  <button onclick="checkContains()">Check</button>
+  <p id="containResult"></p>
+
+  <!-- Example 001 -->
+  <h2>Example 035: Average</h2>
+  <button onclick="findAverage()">Find Average</button>
+  <p id="averageResult"></p>
+<!-- Example 001 -->
+  <h2>Example 036: Generate Random Number</h2>
+  <button onclick="generateRandomNumber()">Generate</button>
+  <p id="randomResult"></p>
+<!-- Example 001 -->
+  <h2>Example 037: Square Root</h2>
+  <input type="number" id="sqrtInput" placeholder="Enter number">
+  <button onclick="findSquareRoot()">Find Root</button>
+  <p id="sqrtResult"></p>
+<!-- Example 001 -->
+  <h2>Example 038: Leap Year Checker</h2>
+  <input type="number" id="yearInput" placeholder="Enter year">
+  <button onclick="checkLeapYear()">Check</button>
+  <p id="leapResult"></p>
+<!-- Example 001 -->
+  <h2>Example 039: Show Today's Date</h2>
+  <button onclick="getTodayDate()">Show Date</button>
+  <p id="todayDate"></p>
+<!-- Example 001 -->
+  <h2>Example 040: Count Digits</h2>
+  <input type="text" id="digitInput" placeholder="Enter text or number">
+  <button onclick="countDigits()">Count</button>
+  <p id="digitCount"></p>
+<!-- Example 001 -->
+  <h2>Example 041: Remove Spaces</h2>
+  <input type="text" id="spaceInput" placeholder="Enter text">
+  <button onclick="removeSpaces()">Remove Spaces</button>
+  <p id="noSpaceOutput"></p>
+<!-- Example 001 -->
+  <h2>Example 042: Repeat String</h2>
+  <input type="text" id="repeatInput" placeholder="String">
+  <input type="number" id="repeatTimes" placeholder="Times">
+  <button onclick="repeatString()">Repeat</button>
+  <p id="repeatOutput"></p>
+<!-- Example 001 -->
+  <h2>Example 043: Character at Position</h2>
+  <input type="text" id="charInput" placeholder="Enter string">
+  <input type="number" id="charPos" placeholder="Position">
+  <button onclick="charAtPosition()">Get Character</button>
+  <p id="charOutput"></p>
+<!-- Example 001 -->
+  <h2>Example 044: Convert to Lowercase</h2>
+  <input type="text" id="lowerInput" placeholder="Enter text">
+  <button onclick="convertToLowercase()">Lowercase</button>
+  <p id="lowerOutput"></p>
+<!-- Example 001 -->
+  <h2>Example 045: Validate Email</h2>
+  <input type="text" id="emailInput" placeholder="Enter email">
+  <button onclick="validateEmail()">Validate</button>
+  <p id="emailOutput"></p>
+<!-- Example 001 -->
+  <h2>Example 046: Sum of Even Numbers</h2>
+  <button onclick="sumEvenNumbers()">Sum Even</button>
+  <p id="evenSumResult"></p>
+<!-- Example 001 -->
+  <h2>Example 047: Find Longest Word</h2>
+  <input type="text" id="longestInput" placeholder="Enter sentence">
+  <button onclick="findLongestWord()">Find Longest</button>
+  <p id="longestWordResult"></p>
+<!-- Example 001 -->
+  <h2>Example 048: Remove Vowels</h2>
+  <input type="text" id="removeVowelInput" placeholder="Enter text">
+  <button onclick="removeVowels()">Remove</button>
+  <p id="removeVowelResult"></p>
+<!-- Example 001 -->
+  <h2>Example 049: Merge Two Arrays</h2>
+  <button onclick="mergeArrays()">Merge</button>
+  <p id="mergedArray"></p>
+<!-- Example 001 -->
+  <h2>Example 050: Is Uppercase?</h2>
+  <input type="text" id="upperCheckInput" placeholder="Enter text">
+  <button onclick="isUpperCase()">Check</button>
+  <p id="upperCheckResult"></p>
+ <!-- Example 001 -->
+
+  <h2>Example 051: Get Current Time</h2>
+  <button onclick="showCurrentTime()">Show Time</button>
+  <p id="currentTime"></p>
+<!-- Example 001 -->
+  <h2>Example 052: Check Palindrome</h2>
+  <input type="text" id="palindromeInput" placeholder="Enter word">
+  <button onclick="checkPalindrome()">Check</button>
+  <p id="palindromeResult"></p>
+<!-- Example 001 -->
+  <h2>Example 053: Count Words</h2>
+  <input type="text" id="wordCountInput" placeholder="Enter sentence">
+  <button onclick="countWords()">Count</button>
+  <p id="wordCountResult"></p>
+<!-- Example 001 -->
+  <h2>Example 054: Generate Random Color</h2>
+  <button onclick="generateRandomColor()">Generate</button>
+  <p id="colorBox" style="width:100px; height:30px;"></p>
+<!-- Example 001 -->
+  <h2>Example 055: Reverse String</h2>
+  <input type="text" id="reverseInput" placeholder="Enter text">
+  <button onclick="reverseString()">Reverse</button>
+  <p id="reverseOutput"></p>
+<!-- Example 001 -->
+  <h2>Example 056: Temperature Advice</h2>
+  <input type="number" id="tempInput" placeholder="Enter temperature">
+  <button onclick="giveTempAdvice()">Check</button>
+  <p id="tempAdvice"></p>
+<!-- Example 001 -->
+  <h2>Example 057: Count Uppercase Letters</h2>
+  <input type="text" id="uppercaseInput" placeholder="Enter text">
+  <button onclick="countUppercaseLetters()">Count</button>
+  <p id="uppercaseCount"></p>
+<!-- Example 001 -->
+  <h2>Example 058: Check Even or Odd</h2>
+  <input type="number" id="evenOddInput" placeholder="Enter number">
+  <button onclick="checkEvenOdd()">Check</button>
+  <p id="evenOddResult"></p>
+<!-- Example 001 -->
+  <h2>Example 059: Get Initials from Name</h2>
+  <input type="text" id="nameInput" placeholder="Enter full name">
+  <button onclick="getInitials()">Get Initials</button>
+  <p id="initialsOutput"></p>
+<!-- Example 001 -->
+  <h2>Example 060: Remove Numbers from Text</h2>
+  <input type="text" id="removeNumInput" placeholder="Enter text">
+  <button onclick="removeNumbers()">Remove Numbers</button>
+  <p id="noNumberOutput"></p>
+
+
+  <!-- Example 061 -->
+  
+    <h2>061. Factorial</h2>
+    <input id="factorialInput" type="number" />
+    <button onclick="findFactorial()">Calculate</button>
+    <div id="factorialResult"></div>
+  
+
+  <!-- Example 062 -->
+  
+    <h2>062. Toggle Case</h2>
+    <input id="toggleCaseInput" />
+    <button onclick="toggleCase()">Toggle</button>
+    <div id="toggleCaseResult"></div>
+  
+
+  <!-- Example 063 -->
+  <section> Random Item</h2>
+    <button onclick="getRandomItem()">Pick</button>
+    <div id="randomItem"></div>
+  
+
+  <!-- Example 064 -->
+
+    <h2>064. Prime Check</h2>
+    <input id="primeInput" type="number" />
+    <button onclick="checkPrime()">Check</button>
+    <div id="primeResult"></div>
+  
+
+  <!-- Example 065 -->
+  
+    <h2>065. Multiplication Table</h2>
+    <input id="tableInput" type="number" />
+    <button onclick="generateTable()">Generate</button>
+    <div id="tableOutput"></div>
+  
+
+  <!-- Example 066 -->
+  
+    <h2>066. Substring Check</h2>
+    <input id="mainStr" placeholder="Main text" />
+    <input id="subStr" placeholder="Substring" />
+    <button onclick="checkSubstring()">Check</button>
+    <div id="subResult"></div>
+  
+
+  <!-- Example 067 -->
+  
+    <h2>067. Swap Two Numbers</h2>
+    <input id="swapA" type="number" placeholder="A" />
+    <input id="swapB" type="number" placeholder="B" />
+    <button onclick="swapNumbers()">Swap</button>
+    <div id="swapResult"></div>
+  
+  <!-- Example 068 -->
+  
+    <h2>068. Divisible by 3 & 5</h2>
+    <input id="divInput" type="number" />
+    <button onclick="isDivisibleBy3and5()">Check</button>
+    <div id="divResult"></div>
+  
+
+  <!-- Example 069 -->
+
+    <h2>069. Second Largest</h2>
+    <button onclick="findSecondLargest()">Find</button>
+    <div id="secondLargest"></div>
+  
+
+  <!-- Example 070 -->
+  
+    <h2>070. Vowel & Consonant Count</h2>
+    <input id="vcInput" />
+    <button onclick="countVowelsConsonants()">Count</button>
+    <div id="vcResult"></div>
+  
+
+  <!-- Example 071 -->
+  
+    <h2>071. Round to 2 Decimal Places</h2>
+    <input id="roundInput" />
+    <button onclick="roundToTwoDecimals()">Round</button>
+    <div id="roundResult"></div>
+  
+
+  <!-- Example 072 -->
+  
+    <h2>072. BMI Calculator</h2>
+    <input id="weightInput" placeholder="Weight (kg)" />
+    <input id="heightInput" placeholder="Height (m)" />
+    <button onclick="calculateBMI()">Calculate</button>
+    <div id="bmiOutput"></div>
+  
+
+  <!-- Example 073 -->
+  
+    <h2>073. Convert Days to Weeks</h2>
+    <input id="daysInput" />
+    <button onclick="convertDaysToWeeks()">Convert</button>
+    <div id="weeksOutput"></div>
+  
+
+  <!-- Example 074 -->
+
+    <h2>074. Common Elements in Two Arrays</h2>
+    <button onclick="findCommonElements()">Find</button>
+    <div id="commonOutput"></div>
+  
+
+  <!-- Example 075 -->
+  
+    <label>075. Capital Letter Start Count</label>
+    <input id="capitalInput" />
+    <button onclick="countWordsStartingWithCapital()">Count</button>
+    <div id="capitalResult"></div>
+  
+<!-- Example 001 -->
+
+<h2>076. Leap Year Checker</h2>
+<input id="leapYearInput" placeholder="Enter Year" />
+<button onclick="checkLeapYear()">Check</button>
+<div id="leapYearResult"></div>
+<!-- Example 001 -->
+<h2>077. Reverse Number</h2>
+<input id="reverseNumInput" placeholder="Enter Number" />
+<button onclick="reverseNumber()">Reverse</button>
+<div id="reverseNumResult"></div>
+<!-- Example 001 -->
+<h2>078. Max Value in Array</h2>
+<button onclick="findMaxInArray()">Find Max</button>
+<div id="maxArrayResult"></div>
+<!-- Example 001 -->
+<h2>079. Character Counter</h2>
+<input id="charCountInput" placeholder="Enter Text" />
+<button onclick="countCharacters()">Count</button>
+<div id="charCountResult"></div>
+<!-- Example 001 -->
+<h2>080. Palindrome Number</h2>
+<input id="palindromeNumInput" placeholder="Enter Number" />
+<button onclick="isPalindromeNumber()">Check</button>
+<div id="palindromeNumResult"></div>
+<!-- Example 001 -->
+<h2>081. Remove Spaces</h2>
+<input id="spaceRemoveInput" placeholder="Enter Text with Spaces" />
+<button onclick="removeSpaces()">Remove</button>
+<div id="spaceRemoveResult"></div>
+<!-- Example 001 -->
+<h2>082. Perfect Square Checker</h2>
+<input id="perfectSquareInput" placeholder="Enter Number" />
+<button onclick="checkPerfectSquare()">Check</button>
+<div id="perfectSquareResult"></div>
+<!-- Example 001 -->
+<h2>083. Count Digits</h2>
+<input id="digitCountInput" placeholder="Enter Number" />
+<button onclick="countDigits()">Count</button>
+<div id="digitCountResult"></div>
+<!-- Example 001 -->
+<h2>084. ASCII Value Finder</h2>
+<input id="asciiCharInput" placeholder="Enter a Character" />
+<button onclick="findAsciiValue()">Find</button>
+<div id="asciiResult"></div>
+<!-- Example 001 -->
+<h2>085. Sum of Array Elements</h2>
+<button onclick="sumArrayElements()">Sum</button>
+<div id="sumArrayResult"></div>
+
+<h2>086. Generate Fibonacci Sequence</h2>
+<input id="fibonacciInput" placeholder="Enter N (e.g. 10)" />
+<button onclick="generateFibonacciSequence()">Generate</button>
+<div id="fibonacciResult"></div>
+
+<h2>087. Check Armstrong Number</h2>
+<input id="armstrongInput" placeholder="Enter a number" />
+<button onclick="isArmstrongNumber()">Check</button>
+<div id="armstrongResult"></div>
+
+<h2>088. Sort Array Ascending</h2>
+<input id="sortArrayInput" placeholder="Enter numbers separated by comma" />
+<button onclick="sortArrayAscending()">Sort</button>
+<div id="sortArrayResult"></div>
+
+<h2>089. Find GCD of Two Numbers</h2>
+<input id="gcdInput1" placeholder="Enter number A" />
+<input id="gcdInput2" placeholder="Enter number B" />
+<button onclick="findGCD()">Find GCD</button>
+<div id="gcdResult"></div>
+
+<h2>90. Validate Email Format</h2>
+<input id="emailInput" placeholder="Enter your email" />
+<button onclick="validateEmailFormat()">Validate</button>
+<div id="emailResult"></div>
+    </div>
+
+  
+   
+    <!-- JS Links -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
